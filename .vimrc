@@ -11,12 +11,12 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'mattn/zencoding-vim'
 Bundle 'tpope/vim-surround'
 Bundle 'klen/python-mode'
-Bundle 'AutoClose'
-Bundle 'sudo.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'osyo-manga/neocomplcache-clang_complete'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'tomasr/molokai'
+Bundle 'AutoClose'
+Bundle 'sudo.vim'
 Bundle 'a.vim'
 "Bundle 'lrvick/Conque-Shell'
 "Bundle 'Align'
@@ -28,7 +28,6 @@ set termencoding=utf-8
 set fileencodings=utf-8,gb2312
 
 set t_Co=256
-colorscheme molokai
 set laststatus=2
 set completeopt=menu
 
