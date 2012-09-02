@@ -8,12 +8,15 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'Shougo/neocomplcache'
 Bundle 'mattn/zencoding-vim'
 Bundle 'tpope/vim-surround'
 Bundle 'klen/python-mode'
 Bundle 'AutoClose'
 Bundle 'sudo.vim'
+Bundle 'Shougo/neocomplcache'
+Bundle 'osyo-manga/neocomplcache-clang_complete'
+Bundle 'Rip-Rip/clang_complete'
+"Bundle 'lrvick/Conque-Shell'
 "Bundle 'Align'
 "Bundle 'rails.vim'
 
@@ -195,6 +198,11 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
+
+" add neocomplcache option
+let g:neocomplcache_force_overwrite_completefunc=1
+" add clang_complete option
+let g:clang_complete_auto=1
 
 
 "Rails settings"
