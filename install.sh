@@ -27,5 +27,5 @@ rm conque_2.3.vmb
 
 cd ~/.vim/bundle/neocomplcache/plugin
 mv neocomplcache.vim neocomplcache.vim.bak
-sed "34,38d" neocomplcache.vim.bak > neocomplcache.vim
+sed "33,37d" neocomplcache.vim.bak > neocomplcache.vim
 
