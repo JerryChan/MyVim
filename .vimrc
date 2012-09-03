@@ -14,6 +14,7 @@ Bundle 'klen/python-mode'
 Bundle 'Shougo/neocomplcache'
 Bundle 'osyo-manga/neocomplcache-clang_complete'
 Bundle 'Rip-Rip/clang_complete'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tomasr/molokai'
 Bundle 'AutoClose'
 Bundle 'sudo.vim'
@@ -28,6 +29,7 @@ set termencoding=utf-8
 set fileencodings=utf-8,gb2312
 
 set t_Co=256
+colorscheme molokai
 set laststatus=2
 set completeopt=menu
 
@@ -65,7 +67,7 @@ set noswapfile
 
 
 let mapleader = ","
-nnoremap <leader><leader> :CtrlP<CR>
+nnoremap <leader>f :CtrlP<CR>
 
 noremap <Leader>e :quit<CR>  " Quit current window
 noremap <Leader>E :qa!<CR>   " Quit all windows
@@ -122,6 +124,7 @@ let g:pymode_syntax_builtin_objs = 0
 let g:pymode_syntax_builtin_funcs = 0
 let g:pymode_folding = 0
 let g:pymode_run = 0
+let g:pymode_lint_write = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
