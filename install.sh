@@ -16,7 +16,7 @@ cp ./.vimrc ~/.vimrc
 vim -c "BundleInstall" -c "qa"
 
 rm ~/.vimrc
-sed "30acolorscheme molokai" .vimrc > ~/.vimrc
+sed "31acolorscheme molokai" .vimrc > ~/.vimrc
 
 sudo chown -R $USER ~/.neocon
 sudo chgrp -R $USER ~/.neocon

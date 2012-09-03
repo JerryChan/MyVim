@@ -29,7 +29,6 @@ set termencoding=utf-8
 set fileencodings=utf-8,gb2312
 
 set t_Co=256
-colorscheme molokai
 set laststatus=2
 set completeopt=menu
 
