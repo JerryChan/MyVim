@@ -18,7 +18,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tomasr/molokai'
 Bundle 'AutoClose'
 Bundle 'sudo.vim'
-Bundle 'a.vim'
+"Bundle 'a.vim'
 "Bundle 'lrvick/Conque-Shell'
 "Bundle 'Align'
 "Bundle 'rails.vim'
@@ -68,16 +68,16 @@ set noswapfile
 let mapleader = ","
 nnoremap <leader>f :CtrlP<CR>
 
-noremap <Leader>e :quit<CR>  " Quit current window
-noremap <Leader>E :qa!<CR>   " Quit all windows
+nnoremap <Leader>e :quit<CR>  " Quit current window
+nnoremap <Leader>E :qa!<CR>   " Quit all windows
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-map <Leader>n <esc>:tabprevious<CR>
-map <Leader>m <esc>:tabnext<CR>
+nnoremap <Leader>n <esc>:tabprevious<CR>
+nnoremap <Leader>m <esc>:tabnext<CR>
 
 vnoremap < <gv
 vnoremap > >gv
@@ -113,7 +113,7 @@ let g:ctrlp_working_path_mode = 'r'
 
 
 "python-mode settings"
-map <Leader>g :call RopeGotoDefinition()<CR>
+nmap <Leader>g :call RopeGotoDefinition()<CR>
 let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = "vnew"
 let g:pymode_rope_extended_complete = 1
@@ -124,7 +124,7 @@ let g:pymode_syntax_builtin_funcs = 0
 let g:pymode_folding = 0
 let g:pymode_run = 0
 let g:pymode_lint_write = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+nmap <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
 "neocomplcache settings"
