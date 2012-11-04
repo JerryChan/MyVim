@@ -64,6 +64,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+set autoread
+
 
 let mapleader = ","
 nnoremap <leader>f :CtrlP<CR>
