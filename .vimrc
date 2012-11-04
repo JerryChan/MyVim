@@ -66,9 +66,6 @@ set noswapfile
 
 set autoread
 
-autocmd QuickFixCmdPost [^l]* nested cwindow
-autocmd QuickFixCmdPost    l* nested lwindow
-
 
 let mapleader = ","
 nnoremap <leader>f :CtrlP<CR>
