@@ -66,6 +66,9 @@ set noswapfile
 
 set autoread
 
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
 
 let mapleader = ","
 nnoremap <leader>f :CtrlP<CR>
@@ -92,6 +95,8 @@ autocmd FileType python highlight SpellBad ctermbg=None cterm=underline
 
 autocmd FileType c,cpp imap <F9> <esc>:w<cr>:!clear && g++ "%:t" -o "%:t:r" && ./"%:t:r"<cr>
 autocmd FileType c,cpp nmap <F9> :w<cr>:!clear && g++ "%:t" -o "%:t:r" && ./"%:t:r"<cr>
+autocmd FileType c,cpp imap <F5> <esc>:w<cr>:copen<cr>:make<cr>
+autocmd FileType c,cpp nmap <F5> :w<cr>:copen<cr>:make<cr>
 autocmd FileType c,cpp set cindent
 
 autocmd FileType python imap <F9> <esc>:w<cr>:!clear && python "%:t"<cr>
