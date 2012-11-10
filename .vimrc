@@ -44,6 +44,7 @@ set nowrap
 set fo-=t
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
+highlight Normal ctermbg=None
 highlight MatchParen ctermbg=None ctermfg=Red cterm=bold
 
 set history=700
